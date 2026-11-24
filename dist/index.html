@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light dark">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem("commitment-atlas-theme")==="dark"?"dark":"light";}catch{document.documentElement.dataset.theme="light";}</script>
+  <meta name="description" content="Explore red-line precedents across six sectors, trace historical milestones, inspect the evidence, and examine transferable lessons for AI governance.">
+  <title>The Commitment Atlas | Red-line precedents</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23182937'/%3E%3Cpath d='M7 7v18h18M13 7v12h12' stroke='%23fff' stroke-width='2' fill='none'/%3E%3Cpath d='M7 14h18' stroke='%23f17872' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <aside class="sidebar" aria-label="Atlas navigation">
+    <a class="brand" href="#sectors"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M7 6v24h23M15 6v16h15"/><path class="brand-line" d="M7 15h23"/></svg><span>The Commitment<br><strong>Atlas</strong></span></a>
+    <p class="sidebar-description">Historical precedents.<br>Lessons for AI governance.</p>
+    <nav id="navigation" aria-label="Main"></nav>
+    <div class="sidebar-bottom"><p>Research by<br><strong>Zhang Yue & Shagufta Sen</strong></p><a id="paper-link" target="_blank" rel="noopener noreferrer">Read the midterm paper</a></div>
+  </aside>
+  <div class="page-shell">
+    <header class="topbar"><span id="breadcrumb">Research dashboard / Historical precedents</span><button id="theme-toggle" class="theme-toggle" type="button" data-action="toggle-theme" aria-pressed="false" aria-label="Switch to night mode">Night mode</button></header>
+    <main id="main" tabindex="-1"></main>
+    <footer><span>The Commitment Atlas</span><span>Historical evidence informs design. Transfer to AI remains an argument to test.</span><a href="#methods">Sources & methods</a></footer>
+  </div>
+  <dialog id="record-dialog" aria-labelledby="record-title"><div id="record-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">This dashboard needs JavaScript to show the dataset. Enable JavaScript or open the original <a href="https://docs.google.com/spreadsheets/d/1kT2igmcThhO0EwrEAmsQuemUioZal_HZ/edit">research workbook</a>.</div></noscript>
+</body>
+</html>
